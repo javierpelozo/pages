@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Introducción a GitHub Pages</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <span class="logo"><img src="images/logo.svg" alt="" /></span>
+            <h1>Introducción a GitHub Pages</h1>
+            <p>Pequeña Introducción súper rápida a <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> <br /> por <a href="https://twitter.com/javierpelozo_" target="_blank">@javierpelozo_</a>.</p>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#intro" class="active">Introducción</a></li>
+                <li><a href="#first">Primer Paso</a></li>
+                <li><a href="#second">Segundo Paso</a></li>
+                <li><a href="#cta">Comenzar</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Introduction -->
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>Introducción</h2>
+                        </header>
+                        <p>GitHub Pages nos permite subir archivos HTML, CSS y Javascript como si fuera un repositorio normal de Git y nos permite ejecutar páginas webs del lado del cliente. <br> GitHub Pages no funciona para tecnologías de Servidor ya que no se encarga de compilar archivos ni de interpretar.</p>
+                        <p>Funciona para tener documentación, páginas personales, páginas para algún proyecto en específico, etc.</p>
+                    </div>
+                    <span class="image"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></span>
+                </div>
+            </section>
+
+            <!-- First Section -->
+            <section id="first" class="main special">
+                <header class="major">
+                    <h2>Primeros pasos</h2>
+                </header>
+                <ul class="features">
+                    <li>
+                        <span class="icon major style1 fa-code"></span>
+                        <h3>Código</h3>
+                        <p>Tener en una carpeta local todo el código que va a ser subido a git para poder mostrarlo a GitHub Pages.</p>
+                    </li>
+                    <li>
+                        <span class="icon major style3 fa-copy"></span>
+                        <h3>Repositorio desde GitHub</h3>
+                        <p>Podemos crear un repositorio dónde vamos a subir todos nuestros archivos que queremos que se muestre.</p>
+                    </li>
+                    <li>
+                        <span class="icon major style5 fa-diamond"></span>
+                        <h3>Git Init</h3>
+                        <p>Iniciar con Git Init desde la terminal donde está ubicada nuestra carpeta con todos los archivos a subir.</p>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Second Section -->
+            <section id="second" class="main special">
+                <header class="major">
+                    <h2>Segundo Paso</h2>
+
+                </header>
+
+                <pre>
+                <code style="text-align: left">
+                    cd nombreDeLaCarpeta
+                    git init
+                    git add .
+                    git commit -m "Mensaje"
+                    
+                    //Ingresar a github.com y crear un repositorio
+                    
+                    git remote add origin https://github.com/usuario/nombreDeRepositorio.git
+                    git push -u origin master
+                </code>
+                </pre>
+
+                <p>Subimos los commits creados a la rama master de Github.</p>
+
+                <pre>
+                <code style="text-align: left">
+                    //Creamos un rama nueva
+                    
+                    git branch gh-pages
+                    git checkout gh-pages
+                    git branch
+                    git push origin gh-pages
+                </code>
+                </pre>
+
+
+
+
+
+
+
+            </section>
+
+            <!-- Get Started -->
+            <section id="cta" class="main special">
+                <header class="major">
+                    <h2>Crear una cuenta en GitHub</h2>
+                    <p>Trabajo para la casa (?)</p>
+                </header>
+                <footer class="major">
+                    <ul class="actions">
+                        <li><a href="https://github.com/" target="_blank" class="button special">Ir a GitHub</a></li>
+                    </ul>
+                </footer>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+
+
+            <p class="copyright">&copy; Introducción a GitHub Pages. <br>Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
